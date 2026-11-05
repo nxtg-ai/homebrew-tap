@@ -1,26 +1,26 @@
 class Forge < Formula
   desc "Universal orchestration engine for AI-powered development"
   homepage "https://github.com/nxtg-ai/forge-orchestrator"
-  version "1.7.1"
+  version "1.8.0"
   license "FSL-1.1-ALv2"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/nxtg-ai/forge-orchestrator/releases/download/v#{version}/forge-macos-aarch64.tar.gz"
-      sha256 "2dd6899c69d81a1072a5f7b16ba52ea88ccffe205872edb586ff130cd5fe061b"
+      sha256 "4abec5c15e7a67d0d0bfb7a4ad873994947e46695aec73cafda5450bdd90b878"
     else
       url "https://github.com/nxtg-ai/forge-orchestrator/releases/download/v#{version}/forge-macos-x86_64.tar.gz"
-      sha256 "7b04b441a7dd43b2c6be2a4c789362c00f46b6417c1defbf6417fafeba1eb954"
+      sha256 "794f33452826e0a80ae152022b571db95b01ebd759e634b436cdc9a1184c0481"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/nxtg-ai/forge-orchestrator/releases/download/v#{version}/forge-linux-aarch64.tar.gz"
-      sha256 "704a1678c059f14770ef4f154010bc0df30a3b30bbc1cb768db01c4b4bdbf238"
+      sha256 "79aa16348a44dc479542a256d89bd056bd67cddd3603b2c21477d06cfe0a8f23"
     else
       url "https://github.com/nxtg-ai/forge-orchestrator/releases/download/v#{version}/forge-linux-x86_64.tar.gz"
-      sha256 "0ff076a00c8630f9b33bc97b67d9ffb025bd8960122376b3b76173b66d9de895"
+      sha256 "8402edd46fdc1d4c26b7567c4b620490814722d3aa610917f455351f056f847e"
     end
   end
 
